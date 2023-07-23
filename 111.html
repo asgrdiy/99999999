@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Minority Victory Game</title>
+</head>
+<body>
+    <h1>Minority Victory Game</h1>
+    <p>Minimum Bet: <span id="minimumBet"></span> wei</p>
+    <p>Pot: <span id="pot"></span> wei</p>
+    <p>Voting Status: <span id="votingStatus"></span></p>
+    <p>End Time: <span id="endTime"></span></p>
+    <p>Winning Option: <span id="winningOption"></span></p>
+    <p>Winning Votes: <span id="winningVotes"></span></p>
+    <p>Losing Votes: <span id="losingVotes"></span></p>
+    <p>Your Balance: <span id="balance"></span> wei</p>
+    <input type="number" id="betAmount" placeholder="Enter bet amount">
+    <select id="betOption">
+        <option value="1">YES</option>
+        <option value="2">NO</option>
+    </select>
+    <button onclick="placeBet()">Place Bet</button>
+    <button onclick="startNewRound()">Start New Round</button>
+    <button onclick="endVoting()">End Voting</button>
+    <button onclick="withdrawLosingPot()">Withdraw Losing Pot</button>
+
+    <script src="web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+
